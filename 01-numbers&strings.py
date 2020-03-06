@@ -18,6 +18,10 @@ b = 6.3
 
 age = 12
 
+width, height = 5.6, 6.5
+
+n = m = 'hi'
+
 # Arithmetic operator's
 
 add = 5 + 6  # addition
@@ -61,6 +65,16 @@ print(name * 3)
 print(name + city)
 
 
+print(type(name))
+
+
+# boolean (True or False)
+
+print(5 == 5)
+
+print(7 > 3)
+
+print(6 < 2)
 
 
 
