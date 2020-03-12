@@ -17,3 +17,13 @@
 # 4. Write a Python Program to Check Prime Number?
 
 # 5. Write a Python programme 1 to 10 th table (from 1 to 10).
+
+
+num = 5
+
+for i in range(2, num):
+    if (num % i) == 0:
+        print(num, "is not a prime number")
+        break
+else:
+    print(num, "is a prime number")

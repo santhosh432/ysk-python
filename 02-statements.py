@@ -1,5 +1,5 @@
 """
-    Topic: Numbers & Strings
+    Topic: Statements
     Author: YSK-PYTHON
     python : 3.5.2
 
@@ -57,7 +57,7 @@ for i in 'I am a developer':
 i = 0
 for k in 'hello':
     print('Index', i, 'value', k)
-    i += 1  # i = i +1
+    i += 2  # i = i +2
 
 # while Statement
 
