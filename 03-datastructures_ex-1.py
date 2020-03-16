@@ -10,4 +10,4 @@
 # 2.Create a list with some number sand check an item exists in the list or not?
 # 3.Remove the last and first item in the list.
 # 4.Write a programme finding a duplicate elements in the list.
-# 5.Write a programme to get a unique number sin a list .
+# 5.Write a programme to get a unique numbers in a list .
