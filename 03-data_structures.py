@@ -95,3 +95,89 @@ print(tup)
 print(type(list_two))
 
 print(type(tup))
+
+print("=============== SET ================")
+# ============= Set ================
+
+s1 = set()
+print(s1)
+
+s2 = {100,20,52,12,23,98, 98, 100}
+print(s2)
+
+print(type(s2))
+
+
+print('=============== DICT ================')
+
+d1 = {}
+print(d1)
+
+d2 = {'name': 'sreeram', 'place':'hyderabad'}
+print(d2)
+
+d2['height'] = 6
+
+d2['weight'] = 50
+print(d2)
+
+d3 = {}
+
+for i in range(1, 101):
+    d3[i] = i*i*i
+
+print(d3)
+
+# print(d3[200])
+
+
+print(d3.get(200, 'This is not exists'))
+
+student_marks = {'101': 20, '102':30, '103':45}
+
+print(student_marks)
+
+# print(student_marks['105'])
+
+print(student_marks.get('103', 'Absent'))
+
+regno = '102'
+
+if regno in d3:
+    # print(regno, 'Exist')
+    print(d3[regno])
+else:
+    # print(regno, 'Not exist')
+    print('Absent')
+
+
+
+## list comprehensions
+
+
+print('================ LIST COMP ========================')
+cubes_of_elements = [i*i*i for i in range(1, 11)]
+
+print(cubes_of_elements)
+
+
+even_numbers = tuple(i for i in range(1,101) if i % 2 == 0)
+
+# even_numbers = []
+# for i in range(1, 101):
+#     print('My items', i)
+#
+#     if i%2 == 0:
+#         print('check', i)
+#         even_numbers.append(i)
+
+print(even_numbers)
+
+print(type(even_numbers))
+
+#####  dict comp =======
+
+d_comp = {i:i*i*i for i in range(1,101) if i %5 == 0}
+
+print(d_comp)
+

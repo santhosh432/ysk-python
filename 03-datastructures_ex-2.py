@@ -33,3 +33,57 @@
 # 5. my_numbers = [8,9,6,56,94,3,6,5,63,1,2,5,87,8,33,45,7,775,4845,85,96,4]
 # create a new list with numbers which all are divisible by both 3 and 5 .
 # create a new list with numbers which all are divisible by either 5 or 7.
+
+
+
+scores = {'palyer1': [23,56,8,98,100], 'player2': [89,25,6,3,6], 'player3': [0,2,5,6,9]}
+
+total_scores = {}
+print('Before ', total_scores)
+
+
+for keys, values in scores.items():
+    print(keys, '-----',  values)
+    total_scores[keys] = sum(values)
+
+print('After', total_scores)
+
+
+avg_scores = {}
+
+for k, v in scores.items():
+    print(k , v)
+    avg_scores[k] = round(sum(v)/len(v))
+
+print(avg_scores)
+
+
+max_scores ={}
+
+for k , v in scores.items():
+    print(k, v)
+    max_scores[k] = max(v)
+
+print('Max scores', max_scores)
+
+
+
+
+
+# 3.
+
+my_list = [100, 200, 100, 200,300,100,100,200]
+
+repeat_number = {}
+
+for i in my_list:
+    if i in repeat_number:
+        repeat_number[i] = repeat_number[i] + 1
+
+    else:
+        repeat_number[i] = 1
+    print(repeat_number)
+
+print('repeat_number',repeat_number)
+
+
