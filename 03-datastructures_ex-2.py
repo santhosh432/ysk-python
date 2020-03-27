@@ -87,3 +87,43 @@ for i in my_list:
 print('repeat_number',repeat_number)
 
 
+h = {}
+
+for k in my_list:
+    h[k] = h.get(k, 0) + 1
+
+print(h)
+
+
+
+
+print('=' * 100)
+my_list = [100, 200, 100, 200,300,100,100,200]
+print(my_list)
+
+print(set(my_list))
+u_values = set(my_list)
+h = {}
+
+for i in u_values:
+    print(i,'======', my_list.count(i))
+    h[i] = my_list.count(i)
+
+print(h)
+
+
+
+runs = 1 # 0.5, 0.25, 0.125
+for k in range(6):
+    # print(k)
+    runs = runs / 2  # 0 + 1
+    print(k, runs)
+
+print(runs)
+
+
+
+
+
+
+

@@ -19,3 +19,18 @@ my_scores = [[25,100,20,30], [56,89,65,12], [54,105,103]]
 my_items =(2,3,6,9,6,7)
 
 
+# sol
+
+def full_name(name):
+    print(name['first_name'])
+    print(name['last_name'])
+    fullname = {'full_name': name['first_name'] + name['last_name']}
+    return fullname
+
+print(full_name({'first_name': 'sachin', 'last_name': 'Tendulkar'}))
+
+
+print(list(map(full_name, my_name)))
+
+
+print(list(map(lambda x: {'full_name': x['first_name'] + x['last_name']}, my_name)))
